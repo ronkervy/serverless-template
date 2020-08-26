@@ -1,9 +1,10 @@
 const jwt = require('jsonwebtoken');
 const createHttpError = require('http-errors');
+require('dotenv').config();
 
 const IssueToken = {
     generateToken : (user)=>{
-        return new Promise((resolve,reject)=>{
+        return new Promise((resolve,reject)=>{            
             const payload = {
                 sub : user._id,
                 uname : user.uname,            
