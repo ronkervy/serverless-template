@@ -6,5 +6,6 @@ router.post('/auth/login',AuthControllers.login);
 router.post('/auth/register',AuthControllers.register);
 router.delete('/auth/logout',AuthControllers.logout);
 router.get('/auth/refresh-token',AuthControllers.refreshToken);
+router.get('/auth/dashboard',AuthControllers.dashboard);
 
 module.exports = router;
