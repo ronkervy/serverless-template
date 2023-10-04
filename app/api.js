@@ -22,8 +22,8 @@ const corsOpt = {
     optionsSuccessStatus : 204
 }
 
-app.use(bp.json());
 app.use(helmet());
+app.use(bp.json());
 app.use(cors(corsOpt));
 app.use(cookieParser());
 
