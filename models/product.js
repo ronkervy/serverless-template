@@ -7,5 +7,8 @@ const Product = new Schema({
       },
       price: {
          type: Integer
+      },
+      tag: {
+         type: String
       }
-},{timeStamps: true});
+},{timestamps: true});
