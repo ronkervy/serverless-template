@@ -35,7 +35,7 @@ const AuthControllers = {
                         .cookie('__authtokens',JSON.stringify(__authtokens),{
                             expires : new Date(Date.now() + 1000 * 60 * 60 * 24),
                             httpOnly : true,
-                            secure : false
+                            secure : true
                         }).json({
                             success : true,
                             info : {
